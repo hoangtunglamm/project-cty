@@ -9,6 +9,7 @@ async function getMessage() {
     
     } catch (err) {
         console.log(err)
+        sql.close()
     }
 }
 
@@ -26,6 +27,7 @@ async function addMessage(SenderUserName, RecipientUserId, Content){
        return result
     } catch (err) {
         console.log(err)
+        sql.close()
     }
 }
 
@@ -38,6 +40,7 @@ async function getActive() {
     
     } catch (err) {
         console.log(err)
+        sql.close()
     }
 }
 
@@ -51,6 +54,7 @@ async function activeMail(mail){
     
     } catch (err) {
         console.log(err)
+        sql.close()
     }
 }
 
