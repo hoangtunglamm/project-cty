@@ -8,6 +8,7 @@ let config = {
 };
 sql.connect(config, (err) => {
     if (err) console.error(err);
+    let request = new sql.Request();
     setInterval(() => {
         request.query('select * from InappropriateUserMediumFlags where status=1', (err, recordset) => {
             if (err) console.error(err);
