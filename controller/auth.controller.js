@@ -14,5 +14,4 @@ async function login(username){
     }
 }
 
-
 module.exports = {login}

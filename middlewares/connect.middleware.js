@@ -6,5 +6,5 @@ const connect = async(req, res, next) => {
         next()
   };
   
-  module.exports = { connect };
+module.exports = { connect };
  
